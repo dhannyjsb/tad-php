@@ -59,7 +59,7 @@ class TADFactory
             'location' => "http://{$options['ip']}{$options['soap_port']}/iWsService",
             'uri' => '',
             'connection_timeout' => $options['connection_timeout'],
-            'exceptions' => false,
+            'exceptions' => true,
             'trace' => true
         ];
 
