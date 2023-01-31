@@ -56,10 +56,10 @@ class TADFactory
         $this->set_options($this->get_default_options(), $options);
 
         $soap_options = [
-            'location' => "http://{$options['ip']}{$options['soap_port']}/iWsService",
-            'uri' => '',
+            'location' => "http://{$options['ip']}/iWsService",
+            'uri' => 'http://www.zksoftware/Service/message/',
             'connection_timeout' => $options['connection_timeout'],
-            'exceptions' => true,
+            'exceptions' => false,
             'trace' => true
         ];
 

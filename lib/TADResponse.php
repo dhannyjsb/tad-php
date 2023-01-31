@@ -189,7 +189,7 @@ class TADResponse
      */
     public function to_json()
     {
-        return $this->is_empty_response() ? '{}' : json_encode(simplexml_load_string(utf8_encode((string) $this)));
+        return $this->is_empty_response() ? '{}' : json_encode(simplexml_load_string((string) $this));
     }
 
     /**
